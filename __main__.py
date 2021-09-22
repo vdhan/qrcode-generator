@@ -26,7 +26,7 @@ def create_qrcode(params):
     qr.make()
 
     output = params.output
-    img = qr.make_image(fill_color=params.background, back_color=params.foreground)
+    img = qr.make_image(fill_color=params.foreground, back_color=params.background)
     img.save(output)
     print('Created file: {}'.format(output))
 
