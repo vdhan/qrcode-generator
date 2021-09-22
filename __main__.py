@@ -78,7 +78,7 @@ if __name__ == '__main__':
 
     create_parser = subparsers.add_parser('create', help='Generate QR Code')
     create_parser.add_argument('content', help='QR Code content')
-    create_parser.add_argument('-b', '--border', help='QR Code image border (default 1)', default=1, type=int)
+    create_parser.add_argument('-b', '--border', help='QR Code image border (default 2)', default=2, type=int)
     create_parser.add_argument('-f', '--foreground', help='foreground color', default='#000')
     create_parser.add_argument('-g', '--background', help='background color', default='#fff')
     create_parser.add_argument('-o', '--output', help='output file', default='output.png')
